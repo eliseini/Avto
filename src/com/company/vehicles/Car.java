@@ -13,7 +13,7 @@ public class Car {
         this.weight=weight;
     }
 
-Driver driver=new Driver("Alex", "10 years");
+Driver driver=new Driver("Alex", 20, "10 years");
 Engine engine=new Engine("380 h/p", "BMW");
 
 public void start(){
@@ -29,10 +29,10 @@ public void start(){
         System.out.println("Поворот на лево");
     }
     public void printInfo(){
-        System.out.println("\nMarka avto "+this.marka);
+        System.out.println("\nDriver info "+driver);
+        System.out.println("Marka avto "+this.marka);
         System.out.println("Class car "+ this.classCar);
         System.out.println("weigth car "+this.weight);
-        System.out.println("Driver info "+driver);
         System.out.println("Engine info "+engine);
     }
 

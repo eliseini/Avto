@@ -1,18 +1,22 @@
 package com.company.professions;
 
-public class Driver {
-    private String name;
+public class Driver extends Person {
+
     private String drivingExperience;
-    public Driver(String name, String drivingExperience){
+    public Driver(String name, int age, String drivingExperience){
+        super(name, age);
         this.drivingExperience=drivingExperience;
-        this.name=name;
+
     }
+Person person=new Person();
 
     @Override
     public String toString() {
-        return "Driver{" +
-                "name='" + name + '\'' +
-                ", drivingExperience=" + drivingExperience +
-                '}';
+        return "{ Name ='" + name + '\'' +", Age = " + age + " years"+
+                ", drivingExperience = '" + drivingExperience + '\'' +
+                 '}';
     }
 }
+
+
+

@@ -10,15 +10,15 @@ public class Lorry extends Car {
         this.carrying=carrying;
     }
 
-    Driver driver=new Driver("Andy", "9 years");
+    Driver driver=new Driver("Andy", 30, "15 years");
     Engine engine=new Engine("180 h/p", "Ford");
 
     @Override
     public void printInfo(){
-        System.out.println("\nMarka avto "+this.marka);
+        System.out.println("\nDriver info "+driver);
+        System.out.println("Marka avto "+this.marka);
         System.out.println("Class car "+ this.classCar);
         System.out.println("weigth car "+this.weight);
-        System.out.println("Driver info "+driver);
         System.out.println("Engine info "+engine);
         System.out.println("Carrying " +carrying );
     }

@@ -11,7 +11,7 @@ public class Engine {
 
     @Override
     public String toString() {
-        return "Engine{" +
+        return "{" +
                 "power=" + power +
                 ", company='" + company + '\'' +
                 '}';
